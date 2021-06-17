@@ -2,7 +2,7 @@
 
 If you find it helpful, hit that ⭐ button.
 
-[![Preview](dsa.png)](https://github.com/afkniladri/Data-Structure-Algorithm-Cplusplus)
+[![Preview](dsa.jpg)](https://github.com/afkniladri/Data-Structure-Algorithm-Cplusplus)
 
 # [Mastering Data Structures & Algorithms using C and C++](https://www.udemy.com/course/datastructurescncpp/)
 
