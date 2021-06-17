@@ -1,3 +1,22 @@
+# VS Code 
+.vscode
+.DS_Store
+
+# ignore .json files
+*.json
+
+# Ignore all
+*
+
+# Unignore all with extensions 
+# binary executables
+!*.*
+!/.gitignore
+!/.gitattributes
+
+# Unignore all dirs
+!*/
+
 # Prerequisites
 *.d
 
