@@ -15,7 +15,7 @@ void Display(class Array arr){
     }
 }
 
-void Insert(class Array *arr, int element){
+void Append(class Array *arr, int element){
     if(arr->length<arr->size){
         arr->A[arr->length++] = element;
     }
@@ -24,7 +24,7 @@ void Insert(class Array *arr, int element){
     }
 }
 
-void Append(class Array *arr, int index, int element){
+void Insert(class Array *arr, int index, int element){
     if(index>arr->size){
         cout<<"Index is greater than the size of array"<<endl;
     }
@@ -58,9 +58,9 @@ int main(){
         cin>>arr.A[i];
     }
 
-    Insert(&arr,32);
+    Append(&arr,32);
 
-    Append(&arr,2,14);
+    Insert(&arr,2,14);
 
     Display(arr);
 
