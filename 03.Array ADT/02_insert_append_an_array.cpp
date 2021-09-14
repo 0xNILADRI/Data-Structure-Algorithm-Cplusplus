@@ -25,11 +25,8 @@ void Append(class Array *arr, int element){
 }
 
 void Insert(class Array *arr, int index, int element){
-    if(index>arr->size){
-        cout<<"Index is greater than the size of array"<<endl;
-    }
-    else if(index<0){
-        cout<<"Enter a valid index"<<endl;
+    if(index<0 || index>arr->size){
+        cout<<"Enter a valid Index"<<endl;
     }
     else if(arr->size==arr->length){
         cout<<"The array is full please increase the size"<<endl;
