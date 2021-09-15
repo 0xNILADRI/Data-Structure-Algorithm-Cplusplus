@@ -18,6 +18,7 @@ void AddElement(Array *arr, int element){
         i--;
     }
     arr->A[i+1]=element;
+    arr->length++;
 }
 
 void Display(Array arr){
