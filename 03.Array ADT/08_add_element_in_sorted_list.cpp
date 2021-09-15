@@ -10,6 +10,9 @@ class Array{
 
 void AddElement(Array *arr, int element){
     int i = arr->length-1;
+    if(arr->length==arr->size){
+        return;
+    }
     while(arr->A[i]>element){
         arr->A[i+1] = arr->A[i];
         i--;
