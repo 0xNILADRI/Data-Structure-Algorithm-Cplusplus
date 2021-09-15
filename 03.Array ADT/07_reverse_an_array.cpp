@@ -14,12 +14,16 @@ void Display(Array arr){
     }
 }
 
+void Swap(int *a, int *b){
+    *a = *a + *b;
+    *b = *a - *b;
+    *a = *a - *b;
+}
+
 void ReverseArray(Array *arr){
     int temp;
     for(int i=0, j=arr->length-1; i<j; i++, j--){
-        temp =  arr->A[i];
-        arr->A[i] = arr->A[j];
-        arr->A[j] = temp; 
+        Swap(&arr->A[i],&arr->A[j]);
     }
 }
 
