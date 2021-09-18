@@ -6,7 +6,7 @@ char *changeCase(char *arr){
         if(arr[i]>= 65 && arr[i]<=90){
             arr[i]+=32;
         }
-        else if(arr[i]>= 97 && arr[i]<=112){
+        else if(arr[i]>= 97 && arr[i]<=122){
             arr[i]-=32;
         }
     }
