@@ -4,7 +4,7 @@ using namespace std;
 int wordCount(char *s){
     int count = 1;
     for(int i=0; s[i]!='\0'; i++){
-        if(s[i]==32)
+        if(s[i]==32 && s[i-1]!=32)
             count++;
     }
     return count;
@@ -21,7 +21,7 @@ int vowelCount(char *s){
 }
 
 int main(){
-    char s[] = "Hello! Welcome to the Jungle.";
+    char s[] = "Hello!    Welcome to the Jungle.";
     cout<<"Word Count  : "<<wordCount(s)<<endl;
     cout<<"Vowel Count : "<<vowelCount(s)<<endl;
     return 0;
